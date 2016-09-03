@@ -28,7 +28,7 @@ int main(int argc, char const *argv[])
 	int bytes[100] = {0};   // Store values for each byte
 	int bitIndex = 0;       // Keep track of where we are in bytes array
 	int loop[100] = {0};    // Keep track of how many times we are looping through a while
-							// Used for multiplying addition in a while loop
+                            // Used for multiplying addition in a while loop
 	int loopIndex = 0;      // Keep track of where we are in the loop array
 	int addsub = 0;         // Used to keep track of how many numbers we are adding/subtracting
 
