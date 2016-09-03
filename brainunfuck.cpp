@@ -25,22 +25,18 @@ int main(int argc, char const *argv[])
 	}
 
 	// declare variables
-	int bytes[100] = {0};	// Store values for each byte
-	int bitIndex = 0;		// Keep track of where we are in bytes array
-	int loop[100] = {0};	// Keep track of how many times we are looping through a while
+	int bytes[100] = {0};   // Store values for each byte
+	int bitIndex = 0;       // Keep track of where we are in bytes array
+	int loop[100] = {0};    // Keep track of how many times we are looping through a while
 							// Used for multiplying addition in a while loop
-	int loopIndex = 0;		// Keep track of where we are in the loop array
-	int addsub = 0;			// Used to keep track of how many numbers we are adding/subtracting
-	bool flag = true;		// Used to keep track of whether or not we get another character
-							// At the end of the while loop
+	int loopIndex = 0;      // Keep track of where we are in the loop array
+	int addsub = 0;         // Used to keep track of how many numbers we are adding/subtracting
 
 	// Grab first character from file
 	int c = ifs.get();
 
 	// continue to run until reached end of file
-	while (c != EOF) {
-		flag = true;
-		
+	while (c != EOF) {		
 		// Check if we are adding
 		if (c == '+') {
 			// add to addsub
@@ -109,7 +105,6 @@ int main(int argc, char const *argv[])
 			cout << "Moved to index " << bitIndex << endl;
 
 		} else if (c == '<') {
-			flag = false;
 			bitIndex--;
 			while (((c = ifs.get()) != EOF) && c == '<') {
 				// add to bitIndex
