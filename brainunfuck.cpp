@@ -147,6 +147,7 @@ int main(int argc, char const *argv[])
 				// Print out what we are printing
 				cout << "Printing to console : '" 
 					<< (char)bytes[bitIndex] << "'" << endl;
+					
 			} else if (c == ',') {
 				// State that inputs are represented as 100
 				cout << "Asking for input from user" << endl
